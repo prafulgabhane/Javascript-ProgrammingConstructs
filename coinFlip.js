@@ -1,8 +1,18 @@
-console.log("Coin Flip Simulation");
+let headCount = 0;
+let tailCount = 0;
 
-if(Math.random() > 0.5){
-    console.log("Heads!");
+while (headCount != 11 && tailCount != 11) {
+    let coin = Math.floor(Math.random() * 2);
+    if (coin == 0) {
+        headCount++;
+    }
+    else {
+        tailCount++;
+    }
 }
-else{
-    console.log("Tails!");
+if (headCount > tailCount) {
+    console.log("Head Wins!\nHead Count : " + headCount + "\nTails Count : "+ tailCount);
+}
+else {
+    console.log("Tail Wins!\nHead Count : " + headCount + "\nTails Count : "+ tailCount);
 }
