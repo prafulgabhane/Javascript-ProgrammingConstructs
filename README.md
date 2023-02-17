@@ -1,1 +1,1 @@
-# Javascript-ProgrammingConstructs
+# Javascript-Programming-Constructs
