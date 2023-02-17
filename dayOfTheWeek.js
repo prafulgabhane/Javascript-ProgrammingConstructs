@@ -1,29 +1,37 @@
-const prompt = require('prompt-sync')();
-let day = prompt('Enter Single Digit Number To Find Number Name: ');
-day = parseInt(day);
-console.log("Date = " + day);
+const prompt = require("prompt-sync")();
+let day = parseInt(prompt("Enter the day Number: "));
 
-if(day == 0){
-    console.log("Day Of The Week : SUNDAY");
-}
-if(day == 1){
-    console.log("Day Of The Week : MONDAY");
-}
-else if(day == 2){
-    console.log("Day Of The Week : TUESDAY");
-}
-else if(day == 3){
-    console.log("Day Of The Week : WEDNESDAY");
-}
-else if(day == 4){
-    console.log("Day Of The Week : THURSDAY");
-}
-else if(day == 5){
-    console.log("Day Of The Week : FRIDAY");
-}
-else if(day == 6){
-    console.log("Day Of The Week : SATURDAY");
-}
-else{
-    console.log("Invalid Day");
+switch (day) {
+    case 0: 
+        console.log("The day is : Sunday");
+        break;
+    
+    case 1: 
+        console.log("The day is : Monday");
+        break;
+    
+    case 2: 
+        console.log("The day is : Tuesday");
+        break;
+    
+    case 3: 
+        console.log("The day is : Wednesday");
+        break;
+    
+    case 4: 
+        console.log("The day is : Thursday");
+        break;
+    
+    case 5: 
+        console.log("The day is : Friday");
+        break;
+    
+    case 6: 
+        console.log("The day is : Saturday");
+        break;
+    
+    default: 
+        console.log("Invalid day");
+        break;
+
 }
